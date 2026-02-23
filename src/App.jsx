@@ -6,6 +6,7 @@ import Player from './pages/Player/Player'
 import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from './firebase'
 import { ToastContainer} from 'react-toastify';
+import PortfolioDisclaimer from './components/PortfolioDisclaimer/PortfolioDisclaimer';
 
 
 const   App = () => {
@@ -32,6 +33,7 @@ const   App = () => {
         <Route path='/login' element={<Login/>} />
         <Route path='/player/:id' element={<Player/>} />
       </Routes>
+      <PortfolioDisclaimer />
     </div>
   )
 }
